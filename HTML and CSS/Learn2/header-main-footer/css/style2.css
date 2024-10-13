@@ -1,0 +1,22 @@
+@font-face {
+    font-family: Roboto-Light;
+    src: url(fonts/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: Roboto-Italic;
+    src: url(fonts/Roboto/Roboto-Italic.ttf);
+}
+h1{
+    font-family: Roboto-Light, verdana, arial;
+}
+p{
+    font-family: Roboto-Italic, "lucida console", "courier new";
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+}
+div{
+    border: 2px solid;
+    height: 75px;
+    overflow: auto;
+}

@@ -1,0 +1,91 @@
+body{
+    background-color: hsl(0, 7%, 12%);
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    width: 350px;
+    height: 250px;
+    font-size: 10em;
+    text-align: center;
+    border-radius: 25px;
+}
+#box1{
+    /* width: 250px;
+    height: 250px; */
+    background-color: hsl(0, 100%, 62%);
+    /* font-size: 13em;
+    text-align: center; */
+    animation-name: slideUp;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running;
+    /* animation-timing-function: linear; */
+    animation-timing-function: cubic-bezier(0.28, -1.48, 0.54, 2.21);
+}
+#box2{
+    /* width: 250px;
+    height: 250px; */
+    background-color: hsl(120, 72%, 48%);
+    /* font-size: 13em;
+    text-align: center; */
+    animation-name: colorChange;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    /* animation-timing-function: cubic-bezier(0.28, -1.48, 0.54, 2.21); */
+}
+#box3{
+    /* width: 250px;
+    height: 250px; */
+    background-color: hsl(230, 74%, 46%);
+    /* font-size: 13em;
+    text-align: center; */
+    animation-name: boxShadow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    /* animation-timing-function: cubic-bezier(0.28, -1.48, 0.54, 2.21); */
+}
+@keyframes slideLeft {
+    from{transform: translatex(300%)}
+}
+@keyframes slideRight {
+    to{transform: translatex(300%)}
+}
+@keyframes slideUp {
+    from{transform: translateY(300%)}
+}
+@keyframes slideDown {
+    to{transform: translateY(300%)}
+}
+@keyframes rotate {
+    30%{transform: rotateZ(360deg)}
+}
+@keyframes grow {
+    50%{transform: scale(2, 2)}
+}
+@keyframes shirnk {
+    50%{transform: scale(0.5, 0.5)}
+}
+@keyframes fade {
+    100%{opacity: 1}
+}
+@keyframes colorChange{
+    0%{background-color: hsl(0, 100%, 62%)}
+    20%{background-color: hsl(221, 83%, 37%)}
+    40%{background-color: hsl(92, 86%, 30%)}
+    60%{background-color: hsl(59, 74%, 39%)}
+    80%{background-color: hsl(178, 72%, 37%)}
+    100%{background-color: hsl(12, 16%, 48%)}
+}
+@keyframes boxShadow {
+    50%{box-shadow: 0px 0px 50px hsl(60, 100%, 50%)}
+}
